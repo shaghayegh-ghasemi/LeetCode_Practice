@@ -2,9 +2,11 @@ class Solution(object):
     def rob(self, nums):
         n = len(nums)
 
-        # hadnle special cases when nums is empty
+        # handle special cases when nums is empty or there exists only one house
         if n == 0:
             return 0
+        if n == 1:
+            return nums[0]
         
         dp = [0]*n # dp keeps track of the max money that can be robbed until the current house
         dp[0] = nums[0] # max money for first house is equal to the money from the first house
