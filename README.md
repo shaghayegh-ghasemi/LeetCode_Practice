@@ -12,9 +12,9 @@ In this repository, I share my solutions to various problems from [LeetCode](htt
 The repository is organized by problem type or category, with each folder containing the problem statement and my solution code.
 
 ### Example Categories:
-- Arrays
-- Strings
+- Arrays/Strings
 - Dynamic Programming
+- Backtracking
 - Graphs
 - Trees
 
