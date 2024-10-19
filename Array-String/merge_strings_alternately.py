@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
     sol = Solution()
 
-    res =sol.mergeAlternately(word1, word2)
+    res = sol.mergeAlternately(word1, word2)
 
     print(res)
 
