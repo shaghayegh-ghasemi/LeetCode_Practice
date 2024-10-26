@@ -1,8 +1,5 @@
 class Solution(object):
     def removeStars(self, s):
-        if not s: # handle special case
-            return ''
-        
         stack = []
 
         for char in s:
