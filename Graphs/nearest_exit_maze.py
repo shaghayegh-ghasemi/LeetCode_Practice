@@ -17,10 +17,10 @@ class Solution(object):
 
             # Explore the neighbors
             for dx, dy in valid_moves: 
-                neighbor_x, neighbor_y = x + dx, y + dy
+                neighbor_x, neighbor_y = x + dx, y + dy # Get the x and y of the neighbor
                 
                 # Check if the neighbor is within the boundries, it's not a wall and is not already checked
-                if 0 <= neighbor_x < rows and 0 <= neighbor_y < cols and maze[neighbor_x][neighbor_y] == '.' and maze[neighbor_x][neighbor_y] not in visited_cells:
+                if 0 <= neighbor_x < rows and 0 <= neighbor_y < cols and maze[neighbor_x][neighbor_y] == '.' and (neighbor_x, neighbor_y) not in visited_cells:
                     # Check if the cell is an exit 
                     if (neighbor_x == 0 or neighbor_x == rows - 1 or neighbor_y == 0 or neighbor_y == cols - 1) and (neighbor_x != entrance[0] or neighbor_y != entrance[1]):
                         return steps + 1 # Return steps if you find the exit
@@ -34,11 +34,14 @@ if __name__ == "__main__":
     # maze = [["+","+",".","+"],[".",".",".","+"],["+","+","+","."]]
     # entrance = [1,2]
 
-    maze = [["+","+","+"],[".",".","."],["+","+","+"]]
-    entrance = [1,0]
+    # maze = [["+","+","+"],[".",".","."],["+","+","+"]]
+    # entrance = [1,0]
 
     # maze = [[".","+"]]
     # entrance = [0,0]
+
+    maze = [["+",".","+","+","+","+","+"],["+",".","+",".",".",".","+"],["+",".","+",".","+",".","+"],["+",".",".",".","+",".","+"],["+","+","+","+","+","+","."]]
+    entrance = [0,1]
 
     sol = Solution()
 
