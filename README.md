@@ -4,6 +4,7 @@ In this repository, I share my solutions to various problems from [LeetCode](htt
 
 ## Technologies Used
 - Python
+- Java
 
 ## Status
 ⚠️ **Work in Progress:** This repository is not yet complete. More solutions will be added regularly as I progress through LeetCode problems.
