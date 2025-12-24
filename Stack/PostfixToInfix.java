@@ -3,7 +3,7 @@ import java.util.Stack;
 
 public class PostfixToInfix {
 
-    private static final Set<Character> OPS = Set.of('+','-','*','/','^');
+    private static final Set<Character> OPS = Set.of('+','-','*','/','^', '%');
 
     public String postfixToInfix(String s){
         Stack<String> stack = new Stack<>();

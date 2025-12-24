@@ -4,7 +4,7 @@ public class InfixToPrefix {
 
     static int checkPriority(char o){
         if (o == '^') return 3;
-        else if (o == '/' || o == '*' ) {
+        else if (o == '/' || o == '*' || o == '%') {
             return 2;
         } else if (o == '+' || o == '-') {
             return 1;
